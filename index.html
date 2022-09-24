@@ -7,7 +7,7 @@
   <body>
     <header data-test="header" class="page-header">
       <a class="header-logo" href="#">
-        <img src="#" width="140" height="70" alt="Логотип седона.">
+        <img src="#" width="140" height="70" alt="Логотип города седона.">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -15,7 +15,7 @@
             <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="/catalog.html">Гостиницы</a>
@@ -30,20 +30,17 @@
           <li class="navigation-link">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">В избранное</span>
+              <span class="favorite-number">12</span>
             </a>
-          </li>
-          <li class="navigation-link">
-            <a class="navigation-link button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
+      <a class="header-button button" href="#">Хочу сюда!</a>
     </header>
     <main data-test="main" class="main-index">
       <section data-test="hero" class="weclome-screen">
         <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
-        <img src="#" width="188" height="45" alt="welcome">
-        <img src="#" width="256" height="29" alt="to the gorgeous">
-        <img src="#" width="457" height="213" alt="sedona">
+        <img src="#" width="188" height="45" alt="Welcome to the gorgeous Sedona, because the Grand Canyon suck!">
       </section>
       <section data-test="advantages" class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -89,13 +86,13 @@
       <section data-test="search" class="search-hotel">
         <h2 class="search-hotel-title title">Заинтересовались?</h2>
         <p class="search-hotel-description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="search-hotel-button button" type="button">Поиск гостиницы в седоне</button>
+        <a href="#" class="search-hotel-button button">Поиск гостиницы в седоне</a>
       </section>
       <section data-test="subscribe" class="subscribe">
         <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="subscribe-email">Введите Ваш e-mail</label>
+            <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
             <input class="subscribe-input" type="email" name="subscribe-email" id="subscribe-email" placeholder="Ваш e-mail">
             <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
@@ -106,17 +103,17 @@
           <ul class="social-list">
             <li class="social-item">
               <a class="social-link vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">В Контакте</span>
+                <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">В телеграме</span>
+                <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">В ютьюбе</span>
+                <span class="visually-hidden">YouTube</span>
               </a>
             </li>
           </ul>
