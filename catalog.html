@@ -91,7 +91,7 @@
               <!-- Коля обьяснит как размечать данный блок в 8ом разделе
 
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
+                <legend class="catalog-filter-title">Стоимость, &#8381<span class="visually-hidden">в рублях</span>;:</legend>
                 <label for="from">От</label>
                 <input type="number" name="min-interval" id="from" min="0" max="12000" step="100" value="0">
                 <label for="to">До</label>
@@ -106,7 +106,7 @@
             </form>
           </section>
       </header>
-      <section class="hotels">
+      <section class="catalog-hotels">
         <h2 class="result-title title">Найдено гостиниц: <span class="result-number">38</span></h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
@@ -122,6 +122,64 @@
         <a href="#" class="button-view icon-list">
            <span class="visually-hidden">Показать списком</span>
         </a>
+        <ul class="hotels-list">
+          <li class="hotels-card">
+            <a class="hotels-card-link" href="">
+              <img class="hotels-card-image" src="" alt="">
+              <h3 class="hotels-card-title">Amara Resort & Spa</h3>
+            </a>
+            <dl class="hotels-card-description">
+              <dt class="card-sort">Гостиница</dt>
+              <dd class="card-price">От 4000 &#8381 <span class="visually-hidden">рублей</span></dd>
+            </dl>
+            <a class="button-more button" href="/product.html">подробнее</a>
+            <a class="button-favorite button" href="#">в избранное</a>
+            <p class="hotels-stars four-stars"><span class="visually-hidden">Четыре звезды</span></p>
+            <p class="rating">Рейтинг: <span class="rating-result">8,5</span></p>
+          </li>
+          <li class="hotels-card">
+            <a class="hotels-card-link" href="">
+              <img class="hotels-card-image" src="" alt="">
+              <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <dl class="hotels-card-description">
+              <dt class="card-sort">Гостиница</dt>
+              <dd class="card-price">От 5000 &#8381 <span class="visually-hidden">рублей</span></dd>
+            </dl>
+            <a class="button-more button" href="/product.html">подробнее</a>
+            <a class="button-favorite button" href="#">в избранное</a>
+            <p class="hotels-stars four-stars"><span class="visually-hidden">Четыре звезды</span></p>
+            <p class="rating">Рейтинг: <span class="rating-result">9,2</span></p>
+          </li>
+          <li class="hotels-card">
+            <a class="hotels-card-link" href="">
+              <img class="hotels-card-image" src="" alt="">
+              <h3 class="hotels-card-title">Desert Quail Inn</h3>
+            </a>
+            <dl class="hotels-card-description">
+              <dt class="card-sort">Гостиница</dt>
+              <dd class="card-price">От 2500 &#8381 <span class="visually-hidden">рублей</span></dd>
+            </dl>
+            <a class="button-more button" href="/product.html">подробнее</a>
+            <a class="button-favorite button" href="#">в избранное</a>
+            <p class="hotels-stars three-stars"><span class="visually-hidden">Три звезды</span></p>
+            <p class="rating">Рейтинг: <span class="rating-result">6,9</span></p>
+          </li>
+          <li class="hotels-card">
+            <a class="hotels-card-link" href="">
+              <img class="hotels-card-image" src="" alt="">
+              <h3 class="hotels-card-title">GreenTree Inn</h3>
+            </a>
+            <dl class="hotels-card-description">
+              <dt class="card-sort">Гостиница</dt>
+              <dd class="card-price">От 1500 &#8381 <span class="visually-hidden">рублей</span></dd>
+            </dl>
+            <a class="button-more button" href="/product.html">подробнее</a>
+            <a class="button-favorite button" href="#">в избранное</a>
+            <p class="hotels-stars two-stars"><span class="visually-hidden">Две звезды</span></p>
+            <p class="rating">Рейтинг: <span class="rating-result">8,5</span></p>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="page-footer">
