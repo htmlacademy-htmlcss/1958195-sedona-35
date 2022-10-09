@@ -1,0 +1,342 @@
+/* ------------------Шрифты------------------ */
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* ----------------Общие стили---------------- */
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+/* ----------------Стили кнопок---------------- */
+
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #756157;
+  padding: 8px 50px;
+  border-radius: 4px;
+  border: none;
+}
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue {
+  background-color: #82B3D3;
+}
+
+.button-blue:hover {
+  background-color: #68A2CA;
+}
+
+.button-blue:active{
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-green {
+  background-color: #7DB54F;
+}
+
+.button-green:hover {
+  background-color: #6C9E42;
+}
+
+.button-green:active{
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* -------------------Шапка------------------- */
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-link {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.icon-search {
+  width: 20px;
+  height: 20px;
+  background: url("../images/icons/search.svg") no-repeat;
+}
+
+.icon-favorite {
+  width: 20px;
+  height: 20px;
+  background: url("../images/icons/heart.svg") no-repeat;
+}
+
+.favorite-number {
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 5px;
+  background: 20px 20px #7DB54F;
+  border-radius: 50%;
+}
+
+.header-button {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 32px;
+}
+
+/* -------------------Приветствие------------------- */
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
+  padding: 51px 0 82px 0;
+}
+
+.hero-block {
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center, center top;
+  background-size: 100% auto, cover;
+  background-color: #2a1b14;
+  min-height: 282px;
+}
+
+/* -------------------Преимущества------------------- */
+
+.advantages {
+  text-align: center;
+}
+
+.advantages-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.bg-color-blue {
+  background-color: #82B3D3;
+}
+
+.bg-color-gray {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* ---------------------Заинтересовались?--------------------- */
+
+
+/* ---------------------Подпишитесь на рассылку?--------------------- */
+
+.subscribe {
+  background-image: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  background-color: #2a1b14;
+  min-height: 415px;
+}
+
+.subscribe-title,
+.subscribe-description {
+  color: #ffffff;
+}
+
+.subscribe-button {
+  border-radius: 0 4px 4px 0;
+}
+
+/* ---------------------Подвал--------------------- */
+
+.contact-number {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* ---------------------Заголовок / Хлебные крошки-------------------- */
+
+.inner-header {
+  background-image: url("../images/inner-header-background.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  background-color: #2a1b14;
+  min-height: 415px;
+  color: #ffffff;
+}
+
+.inner-header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 76px;
+  font-weight: 700;
+  text-align: left;
+  color: inherit;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------------------Фильтр-------------------- */
+
+.catalog-filter-group {
+  border: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.catalog-filter-item {
+  line-height: 23px;
+}
+
+.control-input-title:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-submit {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.filter-reset {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  border: none;
+  background: none;
+}
+
+.filter-reset:hover {
+  color: rgba(255, 255, 255, 0.6); /* В стайлгайде эффект "Наведение" указан - rgba(255, 255, 255, 1) - а визуально он немного прозрачный. Я решил добавить прозрачность */
+}
+
+.filter-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ---------------------Результат фильтра-------------------- */
+
+.result-title {
+  text-align: left;
+}
+
+.hotels-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hotels-card-link {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.button-more {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 26px;
+}
+
+.rating {
+  display: inline-flex;
+  font-size: 16px;
+  padding: 9px 22px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.rating-result {
+  margin-left: 5px;
+}
+
+/* Пагинация - я так понимаю размер кнопок должен быть фиксированным, так как номер 10 с паддингами выглядит плохо */
