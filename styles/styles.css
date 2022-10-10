@@ -29,6 +29,25 @@ body {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.clear-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* ----------------Стили кнопок---------------- */
 
 .button {
@@ -82,10 +101,6 @@ body {
 }
 
 /* -------------------Шапка------------------- */
-
-.navigation-list {
-  list-style-type: none;
-}
 
 .navigation-link {
   text-decoration: none;
@@ -144,12 +159,6 @@ body {
 
 .advantages {
   text-align: center;
-}
-
-.advantages-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 .title {
@@ -232,12 +241,6 @@ body {
   color: #ffffff;
 }
 
-.inner-header ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 .inner-header-title {
   font-size: 60px;
   line-height: 76px;
@@ -293,7 +296,7 @@ body {
 }
 
 .filter-reset:hover {
-  color: rgba(255, 255, 255, 0.6); /* В стайлгайде эффект "Наведение" указан - rgba(255, 255, 255, 1) - а визуально он немного прозрачный. Я решил добавить прозрачность */
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .filter-reset:active {
@@ -304,12 +307,6 @@ body {
 
 .result-title {
   text-align: left;
-}
-
-.hotels-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 .hotels-card-link {
@@ -338,5 +335,3 @@ body {
 .rating-result {
   margin-left: 5px;
 }
-
-/* Пагинация - я так понимаю размер кнопок должен быть фиксированным, так как номер 10 с паддингами выглядит плохо */
