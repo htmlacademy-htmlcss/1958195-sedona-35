@@ -17,9 +17,6 @@
 }
 
 /* ----------------Общие стили---------------- */
-html {
-  height: 100%;
-}
 
 body {
   padding: 0;
@@ -58,8 +55,11 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffffff;
 }
 
 .content-container {
@@ -79,9 +79,28 @@ body {
   flex-grow: 1;
 }
 
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 /* ----------------Стили кнопок---------------- */
 
 .button {
+  display: inline-block;
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
@@ -94,6 +113,7 @@ body {
   padding: 8px 50px;
   border-radius: 4px;
   border: none;
+  margin: 0;
 }
 
 .button:hover {
@@ -133,8 +153,17 @@ body {
 
 /* -------------------Шапка------------------- */
 
+.page-header {
+  z-index: 1;
+}
+
 .header-logo {
-  margin-right: 45px;
+  margin-right: 26px;
+  margin-bottom: -6px;
+}
+
+.header-logo img {
+  display: block;
 }
 
 .navigation {
@@ -146,23 +175,23 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  width: 339px;
+  align-content: center;
+  min-width: 480px;
 }
 
 .navigation-item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 2px;
 }
 
 .navigation-user {
-  width: 70px;
-  margin-right: 20px;
-}
-
-.navigation-user .navigation-item:not(:last-child) {
-  margin-right: 40px;
+  min-width: 70px;
+  margin-right: 26px;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 20px;
+  box-sizing: content-box;
   text-decoration: none;
   font-size: 20px;
   line-height: 24px;
@@ -170,22 +199,29 @@ body {
   color: #000000;
 }
 
+.navigation-user .navigation-link {
+  padding: 20px 12px;
+}
+
+
 .icon-search {
-  position: absolute;
-  width: 21px;
-  height: 20px;
-  background: url("../images/icons/search.svg") no-repeat;
+  position: relative;
+  display: block;
+  min-width: 21px;
+  min-height: 20px;
+  background: url("../images/icons/search.svg") center no-repeat;
 }
 
 .icon-favorite {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: url("../images/icons/heart.svg") no-repeat;
+  position: relative;
+  display: block;
+  min-width: 20px;
+  min-height: 20px;
+  background: url("../images/icons/heart.svg") center no-repeat;
 }
 
 .favorite-number {
-  position: relative;
+  position: absolute;
   font-size: 10px;
   line-height: 10px;
   font-weight: 400;
@@ -193,8 +229,8 @@ body {
   padding: 5px;
   background: 20px 20px #7DB54F;
   border-radius: 20px;
-  top: -16px;
-  right: -10px;
+  top: 10px;
+  right: 2px;
 }
 
 .header-button {
@@ -208,24 +244,29 @@ body {
 
 /* -------------------Приветствие------------------- */
 
-.hero-img {
-  display: block;
-  margin: 0 auto;
-  padding: 51px 0 82px 0;
-}
-
-.hero-block {
+.hero {
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom center, center top;
   background-size: 100% auto, cover;
   background-color: #2a1b14;
-  min-height: 282px;
+  padding: 51px 0 82px 0;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
 }
 
 /* -------------------Преимущества------------------- */
+
 .advantages {
   text-align: center;
+  padding-top: 69px;
+}
+
+.advantages-list-block:not(:last-child) {
+  margin-top: 90px;
 }
 
 .advantages-list {
@@ -256,19 +297,12 @@ body {
   margin: 0;
 }
 
-.title {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #000000;
+.adventages-title {
+  margin-bottom: 25px;
 }
 
-.description {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
+.advantages-item-description {
+  margin: 0;
 }
 
 .color-white {
@@ -284,8 +318,18 @@ body {
 }
 
 /* ---------------------Заинтересовались?--------------------- */
+
 .search-hotel {
   text-align: center;
+  padding: 96px 0;
+}
+
+.search-hotel-title {
+  margin-bottom: 20px;
+}
+
+.search-hotel-button {
+  margin-top: 54px;
 }
 
 /* ---------------------Подпишитесь на рассылку?--------------------- */
@@ -296,13 +340,18 @@ body {
   background-position: left top;
   background-size: cover;
   background-color: #2a1b14;
-  min-height: 415px;
   text-align: center;
+  color: #ffffff;
+  padding: 96px 0 105px;
 }
 
-.subscribe-title,
-.subscribe-description {
+.subscribe-title {
   color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  margin-top: 54px;
 }
 
 .subscribe-button {
@@ -312,34 +361,31 @@ body {
 /* ---------------------Подвал--------------------- */
 
 .page-footer {
-  min-height: 120px;
+  padding: 43px 0 30px;
 }
 
 .social-list {
   display: flex;
   justify-content: space-between;
-  width: 120px;
+  width: 142px;
+}
+
+.social-link {
+  display: block;
+  width: 47px;
+  height: 40px;
 }
 
 .vk {
-  position: absolute;
-  width: 25px;
-  height: 14px;
-  background: url("../images/icons/vk.svg") no-repeat;
+  background: url("../images/icons/vk.svg") 50% 50% no-repeat;
 }
 
 .telegram {
-  position: absolute;
-  width: 19px;
-  height: 16px;
-  background: url("../images/icons/telegram.svg") no-repeat;
+  background: url("../images/icons/telegram.svg") 50% 50% no-repeat;
 }
 
 .youtube {
-  position: absolute;
-  width: 23px;
-  height: 18px;
-  background: url("../images/icons/youtube.svg") no-repeat;
+  background: url("../images/icons/youtube.svg") 50% 50% no-repeat;
 }
 
 .contact-number {
@@ -356,21 +402,24 @@ body {
   width: 115px;
 }
 
+.logo-htmlacademy img {
+  display: block;
+}
+
 /* ---------------------Заголовок / Хлебные крошки-------------------- */
 
 .inner-header {
   background-image: url("../images/inner-header-background.jpg");
   background-repeat: no-repeat;
-  background-position: left top;
-  background-size: cover;
   background-color: #2a1b14;
-  min-height: 415px;
   color: #ffffff;
+  padding: 35px 0 70px;
 }
 
 .inner-header-title {
   font-size: 60px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
   line-height: 76px;
   font-weight: 700;
   text-align: left;
@@ -381,19 +430,11 @@ body {
 .breadcrumbs-list {
   display: flex;
   align-content: center;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.breadcrumbs-item:not(:last-child)::after { /* Проблема на иконке дом, нет отступа */
-  content: "";
-  position: absolute;
-  margin-top: 2px;
-  width: 20px;
-  height: 20px;
-  background: url("../images/icons/breadcrumbs.svg") no-repeat;
+  margin-right: 10px;
 }
 
 .breadcrumbs-link {
@@ -403,12 +444,11 @@ body {
 }
 
 .breadcrumbs-icon-home {
-  position: absolute;
+  display: block;
   margin-top: 3px;
   width: 21px;
   height: 20px;
-  margin-right: 20px;
-  background: url("../images/icons/home.svg") no-repeat;
+  background: url("../images/icons/home.svg") 50% 50% no-repeat;
 }
 
 .breadcrumbs-link:hover {
@@ -442,7 +482,6 @@ body {
 
 .filter-price {
   width: 288px;
-  /* margin-right: 60px; */
 }
 
 .filter-title {
@@ -471,7 +510,9 @@ body {
 }
 
 .filter-reset {
+  display: block;
   font-family: inherit;
+  padding: 8px 58px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -490,6 +531,21 @@ body {
 }
 
 /* ---------------------Результат фильтра-------------------- */
+
+.catalog-cards {
+  padding: 50px 0 60px;
+}
+
+.catalog-title-wrapper {
+  margin-bottom: 40px;
+}
+
+.cataloh-result-title {
+  text-align: left;
+  width: 518px;
+  margin-top: 0;
+  margin-right: 20px;
+}
 
 .select-control {
   width: 292px;
@@ -526,15 +582,13 @@ body {
 
 .catalog-card-list {
   flex-wrap: wrap;
-}
-
-.result-title {
-  text-align: left;
-  width: 518px;
-  margin-right: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #E6E6E6;
 }
 
 .catalog-card-link {
+  display: block;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -542,16 +596,44 @@ body {
   text-decoration: none;
 }
 
-.button-more {
-  display: inline-block;
+.catalog-card-image {
+  margin-bottom: 16px;
+}
+
+.catalog-card-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.catalog-card-description {
+  margin-top: 0;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.catalog-card-price {
+  margin-left: auto;
+}
+
+.catalog-cards-buttons {
+  display: flex;
+}
+
+.button-more,
+.button-favorite {
   width: 140px;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 0;
 }
 
-.rating {
+.button-favorite {
+  margin-left: auto;
+}
+
+.catalog-card-rating {
   display: inline-block;
+  margin: 0;
   width: 140px;
   text-align: center;
   font-size: 16px;
@@ -562,16 +644,37 @@ body {
 }
 
 .pagination-list {
-
   display: flex;
   width: 400px;
-  align-content: space-between;
 }
 
-.pagination-item {
-  width: 60px;
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  box-sizing: border-box;
+  padding: 10px 10px;
+  min-width: 60px;
+  height: 60px;
+}
+
+.pagination-dots {
+  display: block;
+  padding: 20px 22px 0 22px;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
 }
 
 .subscribe-inner {
-  text-align: center;
+  background: none;
+  color: #000000;
+}
+
+.title-inner {
+  color: #000000;
 }
