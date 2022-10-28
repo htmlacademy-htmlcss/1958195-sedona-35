@@ -93,7 +93,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 /* ----------------Стили кнопок---------------- */
@@ -595,16 +596,39 @@ body {
   text-decoration: none;
 }
 
-.catalog-card-title {
-  margin: 0;
+.catalog-card-image {
+  margin-bottom: 16px;
 }
 
-.button-more {
-  display: inline-block;
+.catalog-card-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.catalog-card-description {
+  margin-top: 0;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.catalog-card-price {
+  margin-left: auto;
+}
+
+.catalog-cards-buttons {
+  display: flex;
+}
+
+.button-more,
+.button-favorite {
   width: 140px;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 0;
+}
+
+.button-favorite {
+  margin-left: auto;
 }
 
 .catalog-card-rating {
