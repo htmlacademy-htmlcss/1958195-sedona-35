@@ -344,63 +344,59 @@ body {
 }
 
 .advantages-item-title {
-  position: relative;
+  order: 1;
   text-align: center;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 30px;
 }
 
-.advantages-item-title::before {
+.items-devider::before {
+  order: 2;
   content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -32px;
-  margin-left: -30px;
   width: 60px;
   height: 2px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.advantages-wrapper-text .advantages-item-title::before {
+.advantages-item-out .items-devider::before {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-list-plus .advantages-item-title {
-  margin-top: 102px;
   margin-bottom: 30px;
 }
 
-.advantages-list-plus .advantages-item-title::before {
+.advantages-icon::before {
   content: "";
-  position: absolute;
+  margin: 0 auto;
+  margin-bottom: 30px;
   width: 75px;
   height: 76px;
-  left: 50%;
-  top: -105px;
-  margin-left: -37px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-color: inherit;
 }
 
-.icon-advantages-housing::before {
+.icon-housing::before {
   background-image: url("../images/icons/advantages-housing.svg");
 }
 
-.icon-advantages-eating::before {
+.icon-eating::before {
   background-image: url("../images/icons/advantages-eating.svg");
 }
 
-.icon-advantages-souvenir::before {
+.icon-souvenir::before {
   background-image: url("../images/icons/advantages-souvenir.svg");
 }
 
 .advantages-item-description {
   margin: 0;
+  order: 3;
 }
 
 .color-white {
