@@ -513,18 +513,18 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #ffffff;
+  fill: #83B3D3;
 }
 
-.social-link:hover .social-icon-color {
+.social-icon:hover {
   fill: #68A2CA;
 }
 
-.social-link:focus .social-icon-color {
+.social-icon:focus {
   fill: #68A2CA;
 }
 
-.social-link:active .social-icon-color {
+.social-icon:active {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -562,17 +562,18 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
+  color: #000000;
 }
 
-.logo-htmlacademy-link:hover .logo-htmlacademy-color {
+.logo-htmlacademy-svg:hover {
   fill: #756157;
 }
 
-.logo-htmlacademy-link:focus .logo-htmlacademy-color {
+.logo-htmlacademy-svg:focus {
   fill: #756157;
 }
 
-.logo-htmlacademy-link:active .logo-htmlacademy-color {
+.logo-htmlacademy-svg:active {
   fill: rgba(117, 97, 87, 0.3);
 }
 /* ---------------------Заголовок / Хлебные крошки-------------------- */
