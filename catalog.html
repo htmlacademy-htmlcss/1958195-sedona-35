@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Гостиницы Седоны</title>
   </head>
@@ -127,7 +128,7 @@
                   <div class="filter-range">
                     <div class="range-wrapper-inputs">
                       <label class="visually-hidden" for="price-from">От</label>
-                      <input class="filter-range-input input" type="number" id="price-from" value="50" name="min-price">
+                      <input class="filter-range-input input" type="number" id="price-from" value="0" name="min-price">
                       <label class="visually-hidden" for="price-to">До</label>
                       <input class="filter-range-input input" type="number" id="price-to" value="9000" name="max-price">
                     </div>
@@ -158,8 +159,8 @@
               <h2 class="cataloh-result-title title">Найдено гостиниц: <span class="result-number">38</span></h2>
               <div class="select-control-wrapper">
                 <select class="select-control" aria-label="Сортировка">
-                  <option value="popular">Сначала популярное</option>
-                  <option value="cheap">Сначала дешёвое</option>
+                  <option value="popular">Сначала дешёвое</option>
+                  <option value="cheap">Сначала популярное</option>
                   <option value="expensive">Сначала дорогое</option>
                 </select>
               </div>
@@ -191,7 +192,7 @@
                 </div>
                 <div class="catalog-rating-wrapper">
                   <p class="catalog-card-stars four-stars"><span class="visually-hidden">Четыре звезды</span></p>
-                  <p class="catalog-card-rating">Рейтинг:<span class="rating-result">8,5</span></p>
+                  <p class="catalog-card-rating">Рейтинг:<span class="rating-result"> 8,5</span></p>
                 </div>
               </li>
               <li class="catalog-card-item">
@@ -209,7 +210,7 @@
                 </div>
                 <div class="catalog-rating-wrapper">
                   <p class="catalog-card-stars four-stars"><span class="visually-hidden">Четыре звезды</span></p>
-                  <p class="catalog-card-rating">Рейтинг:<span class="rating-result">9,2</span></p>
+                  <p class="catalog-card-rating">Рейтинг:<span class="rating-result"> 9,2</span></p>
                 </div>
               </li>
               <li class="catalog-card-item">
@@ -227,7 +228,7 @@
                 </div>
                 <div class="catalog-rating-wrapper">
                   <p class="catalog-card-stars three-stars"><span class="visually-hidden">Три звезды</span></p>
-                  <p class="catalog-card-rating">Рейтинг:<span class="rating-result">6,9</span></p>
+                  <p class="catalog-card-rating">Рейтинг:<span class="rating-result"> 6,9</span></p>
                 </div>
               </li>
               <li class="catalog-card-item">
@@ -245,7 +246,7 @@
                 </div>
                 <div class="catalog-rating-wrapper">
                   <p class="catalog-card-stars two-stars"><span class="visually-hidden">Две звезды</span></p>
-                  <p class="catalog-card-rating">Рейтинг:<span class="rating-result">8,5</span></p>
+                  <p class="catalog-card-rating">Рейтинг:<span class="rating-result"> 5,0</span></p>
                 </div>
               </li>
             </ul>
@@ -263,7 +264,7 @@
                 <a class="pagination-link button button-blue" href="#">4</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-dots">&hellip;</a>
+                <a class="pagination-dots">&#8230;</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link button button-blue pagination-link-last" href="#">10</a>
