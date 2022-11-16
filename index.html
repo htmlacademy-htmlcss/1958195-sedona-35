@@ -159,6 +159,95 @@
           </svg>
         </a>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal-content-container">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="modal-field grid-field-arival">
+                <label class="modal-label grid-label-arival" for="arival-date">Дата Заезда:</label>
+                <div class="modal-input-group grid-group-arival">
+                  <input class="modal-input input" type="date" id="arival-date" name="arival-date" value="27 апреля 2020" required>
+                  <button class="button-calendar input-inner-button" type="button">
+                    <svg class="modal-button-icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.14 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
+                      <path d="M17.4 4h-2V2h-1v2h-8V2h-1v2h-2c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12h-14V9h14v7Zm-14-8V5h2v2h1V5h8v2h1V5h2v3h-14Z"/>
+                      <path d="M10.4 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.64 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM8.14 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.9 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.9 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.4 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.64 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.9 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.9 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+                    </svg>
+                    <span class="visually-hidden">Выбрать дату заезда</span>
+                  </button>
+                </div>
+                <p class="modal-form-information grid-form-information information-error">Мы не можем отправить вас в прошлое.</p>
+              </div>
+              <div class="modal-field grid-field-departure">
+                <label class="modal-label grid-label-departure" for="departure-date">Дата Выезда:</label>
+                <div class="modal-input-group grid-group-departure">
+                  <input class="modal-input input" type="date" id="departure-date" name="departure-date" required>
+                  <button class="button-calendar input-inner-button" type="button">
+                    <svg class="modal-button-icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.14 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
+                      <path d="M17.4 4h-2V2h-1v2h-8V2h-1v2h-2c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12h-14V9h14v7Zm-14-8V5h2v2h1V5h8v2h1V5h2v3h-14Z"/>
+                      <path d="M10.4 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.64 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM8.14 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.9 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.9 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.4 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.64 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.9 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.9 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+                    </svg>
+                    <span class="visually-hidden">Выбрать дату выезда</span>
+                  </button>
+                </div>
+                <p class="modal-form-information grid-form-information">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+              <div class="modal-field grid-field-adults">
+                <label class="modal-label grid-label-adults" for="adults">Взрослые:</label>
+                <div class="modal-input-group grid-group-adults">
+                  <button class="button-minus input-inner-button" type="button">
+                    <svg class="modal-button-icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                    <span class="visually-hidden">Убрать взрослого</span>
+                  </button>
+                  <input class="modal-input modal-input-adults input" type="number" id="adults" name="adults" placeholder="2" required>
+                  <button class="button-plus input-inner-button" type="button">
+                    <svg class="modal-button-icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.39282 9V11H17.3928V9H3.39282Z"/>
+                    </svg>
+                    <span class="visually-hidden">Добавить взрослого</span>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-field grid-field-children">
+                <div class="modal-label-group">
+                  <label class="modal-label grid-label-children" for="children">Дети:</label>
+                  <div class="modal-faq-wrapper">
+                    <button class="button-faq button-blue" type="button">
+                      <svg class="button-icon-info" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.39307 4H11.3931V6H9.39307V4ZM11.3931 16H9.39307V7H11.3931V16Z"/>
+                      </svg>
+                    </button>
+                    <p class="modal-faq-block">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                  </div>
+                </div>
+                <div class="modal-input-group grid-group-children">
+                  <button class="button-minus input-inner-button" type="button">
+                    <svg class="modal-button-icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                    <span class="visually-hidden">Убрать взрослого</span>
+                  </button>
+                  <input class="modal-input modal-input-children input" type="number" id="children" name="children" placeholder="2" required>
+                  <button class="button-plus input-inner-button" type="button">
+                    <svg class="modal-button-icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.39282 9V11H17.3928V9H3.39282Z"/>
+                    </svg>
+                    <span class="visually-hidden">Добавить взрослого</span>
+                  </button>
+                </div>
+              </div>
+              <button class="modal-button button button-blue" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
