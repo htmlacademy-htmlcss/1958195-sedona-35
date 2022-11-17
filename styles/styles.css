@@ -86,6 +86,7 @@ body {
 }
 
 .description {
+  min-width: ;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -147,6 +148,13 @@ body {
 .button-green:active{
   background-color: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled,
+.button-blue:disabled,
+.button-green:disabled{
+  background-color: #E5E5E5;
+  color: #ffffff;
 }
 
 .input {
@@ -269,7 +277,7 @@ body {
   display: block;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 34px;
+  padding: 7px 33px;
   margin-left: auto;
   min-width: 92px;
 }
@@ -294,7 +302,9 @@ body {
 }
 
 .adventages-title {
+  margin: 0 auto;
   margin-bottom: 25px;
+  max-width: 700px;
 }
 
 .advantages-list-block {
@@ -313,9 +323,12 @@ body {
   width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 20px;
+  padding: 103px 20px;
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-icons .advantages-item {
+  padding: 78px 20px;
 }
 
 .advantages-bg-gray {
@@ -328,17 +341,16 @@ body {
 
 .advantages-item-out {
   display: flex;
-  align-items: center;
+  text-align: center;
 }
 
 .advantages-wrapper-text {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 400px;
   min-height: 384px;
-  padding: 20px;
+  padding: 92px 20px;
   color: #ffffff;
   background-color: #82B3D3;
 }
@@ -348,13 +360,13 @@ body {
 }
 
 .advantages-item-title {
+  max-width: 172px;
   order: 1;
-  text-align: center;
+  margin: 0 auto;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -379,7 +391,7 @@ body {
 .advantages-icon::before {
   content: "";
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   width: 75px;
   height: 76px;
   background-repeat: no-repeat;
@@ -399,9 +411,12 @@ body {
 }
 
 .advantages-item-description {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 235px;
   order: 3;
 }
+
+
 
 /* ---------------------Заинтересовались?--------------------- */
 
@@ -428,16 +443,16 @@ body {
   background-color: #2a1b14;
   text-align: center;
   color: #ffffff;
-  padding: 96px 0 105px;
+  padding: 95px 0 104px;
 }
 
 .subscribe-title {
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .subscribe-form {
-  margin-top: 54px;
+  margin-top: 55px;
   display: flex;
   justify-content: center;
 }
@@ -445,7 +460,7 @@ body {
 .subscribe-input {
   box-sizing: border-box;
   width: 452px;
-  padding: 13px 18px;
+  padding: 12px 18px;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -465,8 +480,9 @@ body {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 139px;
+  width: 140px;
 }
 
 .social-link {
@@ -511,6 +527,11 @@ body {
 
 .contact-number:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.logo-htmlacademy-link {
+  margin-top: 3px;
+
 }
 
 .logo-htmlacademy-svg {
@@ -753,6 +774,20 @@ body {
   cursor: pointer;
 }
 
+.filter-range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.filter-range-toggle:focus {
+  outline: 2px solid #83B3D3;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.filter-range-toggle:active {
+  outline: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
 .toggle-min {
   left: 0;
   top: -8px;
@@ -802,10 +837,15 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.filter-reset:disabled {
+  opacity: 10%;
+  background: none;
+}
+
 /* ---------------------Результат фильтра-------------------- */
 
 .catalog-cards {
-  padding: 50px 0 60px;
+  padding: 50px 0 52px;
 }
 
 .catalog-title-wrapper {
@@ -842,8 +882,10 @@ body {
 }
 
 .buttons-view-wrapper {
+  display: grid;
+  grid-template-columns: 48px 48px 48px;
+  gap: 8px;
   width: 160px;
-  justify-content: space-between;
   margin: 0;
   margin-left: auto;
 }
@@ -886,17 +928,17 @@ body {
 }
 
 .catalog-card-list {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 19px;
+  gap: 20px;
   row-gap: 18px;
   margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 2px solid #E6E6E6;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .catalog-card-item {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -929,26 +971,32 @@ body {
 }
 
 .catalog-card-description {
-  margin-top: 0;
-  margin-bottom: 15px;
-  display: flex;
-}
-
-.description-card {
-  width: 140px;
-}
-
-.catalog-card-price {
-  text-align: right;
-}
-
-.catalog-buttons-wrapper {
-  display: flex;
+  margin: 0;
   margin-bottom: 16px;
 }
 
-.button-more,
-.button-favorite {
+.description-card {
+  margin: 0;
+  text-align: right;
+}
+
+.description-card:nth-child(odd) {
+  text-align: left;
+}
+
+.catalog-buttons-wrapper {
+  margin-bottom: 16px;
+}
+
+.catalog-buttons-wrapper,
+.catalog-rating-wrapper,
+.catalog-card-description {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 20px;
+}
+
+.button-card {
   box-sizing: border-box;
   width: 140px;
   font-size: 16px;
@@ -956,19 +1004,10 @@ body {
   padding: 7px 16px;
 }
 
-.button-favorite {
-  margin-left: auto;
-}
-
-.catalog-rating-wrapper {
-  display: flex;
-  align-items: center;
-}
-
 .catalog-card-stars {
   margin: 0;
   width: 114px;
-  height: 17px;
+  height: 37px;
   background: url("../images/icons/stars.svg") left 50% no-repeat;;
 }
 
@@ -1000,17 +1039,22 @@ body {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 
 .pagination-item:not(:last-child) {
+  position: relative;
+  min-width: 60px;
+  height: 60px;
   margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .pagination-link {
   box-sizing: border-box;
-  padding: 10px 10px;
-  min-width: 59px;
+  padding: 10px;
+  min-width: 60px;
   height: 60px;
 }
 
@@ -1020,8 +1064,10 @@ body {
 }
 
 .pagination-dots {
-  display: block;
-  padding: 20px 24px 0 24px;
+  position: absolute;
+  font-size: 24px;
+  top: 19px;
+  left: 20px;
 }
 
 .pagination-current {
@@ -1047,8 +1093,6 @@ body {
 .title-inner {
   color: #000000;
 }
-
-/* ---------------------Модальное окно-------------------- */
 
 .modal-container {
   position: fixed;
@@ -1231,11 +1275,11 @@ body {
 
 .button-minus,
 .button-calendar {
-  right: 0;
+  left: 0;
 }
 
-.button-plus {
-  left: 0;
+.button-minus {
+  right: 0;
 }
 
 .input-inner-button:hover {
