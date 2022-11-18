@@ -76,21 +76,22 @@ body {
 }
 
 .title {
+  max-width: 680px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .description {
-  min-width: ;
+  max-width: 680px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin-top: 0;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -416,10 +417,6 @@ body {
   order: 3;
 }
 
-
-
-/* ---------------------Заинтересовались?--------------------- */
-
 .search-hotel {
   text-align: center;
   padding: 96px 0;
@@ -432,8 +429,6 @@ body {
 .search-hotel-button {
   margin-top: 34px;
 }
-
-/* ---------------------Подпишитесь на рассылку?--------------------- */
 
 .subscribe {
   background-image: url("../images/subscribe-background.jpg");
@@ -471,8 +466,6 @@ body {
 .subscribe-button {
   border-radius: 0 4px 4px 0;
 }
-
-/* ---------------------Подвал--------------------- */
 
 .page-footer {
   padding: 44px 0 33px;
@@ -547,8 +540,6 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-/* ---------------------Заголовок / Хлебные крошки-------------------- */
-
 .inner-header {
   background-image: url("../images/inner-header-background.jpg");
   background-repeat: no-repeat;
@@ -560,7 +551,7 @@ body {
 
 .inner-header-title {
   font-size: 60px;
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 8px;
   line-height: 76px;
   font-weight: 700;
@@ -618,8 +609,6 @@ body {
 .breadcrumbs-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
-
-/* ---------------------Фильтр-------------------- */
 
 .filter-form {
   display: flex;
@@ -841,8 +830,6 @@ body {
   opacity: 10%;
   background: none;
 }
-
-/* ---------------------Результат фильтра-------------------- */
 
 .catalog-cards {
   padding: 50px 0 52px;
@@ -1273,13 +1260,13 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.button-minus,
+.button-plus,
 .button-calendar {
-  left: 0;
+  right: 0;
 }
 
 .button-minus {
-  right: 0;
+  left: 0;
 }
 
 .input-inner-button:hover {
@@ -1303,7 +1290,7 @@ body {
   margin-right: 10px;
 }
 .grid-label-children {
-  margin-right: 10px;
+  margin-right: 11px;
   padding: 0;
 }
 
@@ -1312,6 +1299,7 @@ body {
   min-width: 26px;
   height: 26px;
   border-radius: 50%;
+  margin-bottom: 2px;
   border: none;
   background-color: #82B3D3;
 
@@ -1354,7 +1342,7 @@ body {
   line-height: 20px;
   color: #ffffff;
   margin: 0;
-  padding: 15px 20px;
+  padding: 20px 22px 23px;
   top: 44px;
   left: -115px;
   width: 256px;
