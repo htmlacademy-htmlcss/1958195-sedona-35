@@ -1253,7 +1253,7 @@ body {
   bottom: 0;
   margin: auto;
   content: "";
-  width: 14px;
+  width: 18px;
   height: 2px;
   background-color: #000000;
 }
@@ -1295,7 +1295,7 @@ body {
   display: grid;
   -ms-grid-columns: 137px 110px 88px 131px 110px;
   grid-template-columns: 137px 110px 88px 131px 110px;
-  row-gap: 23px;
+  row-gap: 24px;
 }
 
 .grid-field-arival,
@@ -1537,5 +1537,5 @@ body {
 }
 
 .modal-display-none {
-  display: none;
+  /* display: none; */
 }
