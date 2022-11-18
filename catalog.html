@@ -11,7 +11,7 @@
     <div class="container">
       <header class="page-header flex-container">
         <a class="header-logo" href="index.html">
-            <img src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
+          <img src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
         </a>
         <nav class="navigation">
           <ul class="navigation-list clear-list">
@@ -125,10 +125,14 @@
                   <legend class="filter-title">Стоимость, &#8381;:<span class="visually-hidden">в рублях</span></legend>
                   <div class="filter-range">
                     <div class="range-wrapper-inputs">
-                      <label class="visually-hidden" for="price-from">От</label>
-                      <input class="filter-range-input input" type="number" id="price-from" value="0" name="min-price">
-                      <label class="visually-hidden" for="price-to">До</label>
-                      <input class="filter-range-input input" type="number" id="price-to" value="9000" name="max-price">
+                      <div class="range-input-group group-from">
+                        <label class="title-input-range" for="price-from">От</label>
+                        <input class="filter-range-input input" type="number" id="price-from" value="0" name="min-price">
+                      </div>
+                      <div class="range-input-group group-to">
+                        <label class="title-input-range" for="price-to">До</label>
+                        <input class="filter-range-input input" type="number" id="price-to" value="9000" name="max-price">
+                      </div>
                     </div>
                     <div class="filter-range-scale">
                       <div class="filter-range-bar" style="left: 0; width: 226px">
@@ -175,7 +179,7 @@
             </div>
             <ul class="catalog-card-list clear-list">
               <li class="catalog-card-item">
-                <a class="catalog-card-link" href="">
+                <a class="catalog-card-link" href="#">
                   <img class="catalog-card-image" src="images/catalog/amara.jpg" width="300" height="212" alt="Фото отеля Amara Resort & Spa.">
                   <h3 class="catalog-card-title">Amara Resort & Spa</h3>
                 </a>
@@ -193,7 +197,7 @@
                 </div>
               </li>
               <li class="catalog-card-item">
-                <a class="catalog-card-link" href="">
+                <a class="catalog-card-link" href="#">
                   <img class="catalog-card-image" src="images/catalog/villas.jpg" width="300" height="212" alt="Фото отеля Villas at Poco Diablo.">
                   <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
                 </a>
@@ -211,8 +215,8 @@
                 </div>
               </li>
               <li class="catalog-card-item">
-                <a class="catalog-card-link" href="">
-                  <img class="catalog-card-image" src="images/catalog/desert.jpg" width="300" height="212" alt="Фото отеля Desert Quail Inn">
+                <a class="catalog-card-link" href="#">
+                  <img class="catalog-card-image" src="images/catalog/desert.jpg" width="300" height="212" alt="Фото отеля Desert Quail Inn.">
                   <h3 class="catalog-card-title">Desert Quail Inn</h3>
                 </a>
                 <dl class="catalog-card-description">
@@ -229,8 +233,8 @@
                 </div>
               </li>
               <li class="catalog-card-item">
-                <a class="catalog-card-link" href="">
-                  <img class="catalog-card-image" src="images/catalog/greentree.jpg" width="300" height="212" alt="Фото отеля GreenTree Inn">
+                <a class="catalog-card-link" href="#">
+                  <img class="catalog-card-image" src="images/catalog/greentree.jpg" width="300" height="212" alt="Фото отеля GreenTree Inn.">
                   <h3 class="catalog-card-title">GreenTree Inn</h3>
                 </a>
                 <dl class="catalog-card-description">
@@ -261,7 +265,7 @@
                 <a class="pagination-link button button-blue" href="#">4</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-dots">&#8230;</a>
+                <span class="pagination-dots">&#8230;</span>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link button button-blue pagination-link-last" href="#">10</a>
@@ -301,7 +305,7 @@
         </ul>
         <a class="contact-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
-          <svg class="logo-htmlacademy-svg" aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <svg class="logo-htmlacademy-svg" aria-label="Курсы html-academy." aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 13.2564V15.8564H2.5V13.2564H0Z"/>
             <path d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"/>
             <path d="M26.6 5.15645H21.8V1.45645H19.8V5.25645H17.9V7.25645H19.8V13.2564C19.8 14.9564 20.8 15.9564 22.5 15.9564H26.6V13.9564H22.9C22.2 13.9564 21.8 13.5564 21.8 12.8564V7.15645H26.6V5.15645Z"/>
