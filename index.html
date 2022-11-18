@@ -11,7 +11,7 @@
     <div class="container">
       <header class="page-header flex-container">
         <a class="header-logo" href="#">
-            <img src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
+          <img src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
         </a>
         <nav class="navigation">
           <ul class="navigation-list clear-list">
@@ -68,7 +68,7 @@
               <h3 class="advantages-item-title">Небольшая площадь</h3>
               <p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="advantages-item items-devider advantages-bg-gray">
+            <li class="advantages-item items-devider advantages-background-gray">
               <h3 class="advantages-item-title">Красивая дорога</h3>
               <p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
@@ -89,7 +89,7 @@
               <h4 class="advantages-item-title">Жильё</h4>
               <p class="advantages-item-description">Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в кино!</p>
             </li>
-            <li class="advantages-item advantages-bg-white advantages-icon icon-eating">
+            <li class="advantages-item advantages-background-white advantages-icon icon-eating">
               <h4 class="advantages-item-title">Еда</h4>
               <p class="advantages-item-description">Всегда заказывайте топовый&nbsp;фирменный бургер, вы не разочаруетесь!</p>
             </li>
@@ -134,11 +134,9 @@
             </a>
           </li>
         </ul>
-        <a class="contact-number" href="tel:+78128121212">
-          +7 (812) 812-12-12
-        </a>
+        <a class="contact-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
-          <svg class="logo-htmlacademy-svg" aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <svg class="logo-htmlacademy-svg" aria-label="Курсы html-academy." aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 13.2564V15.8564H2.5V13.2564H0Z"/>
             <path d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"/>
             <path d="M26.6 5.15645H21.8V1.45645H19.8V5.25645H17.9V7.25645H19.8V13.2564C19.8 14.9564 20.8 15.9564 22.5 15.9564H26.6V13.9564H22.9C22.2 13.9564 21.8 13.5564 21.8 12.8564V7.15645H26.6V5.15645Z"/>
@@ -154,11 +152,8 @@
           </svg>
         </a>
       </footer>
-      <div class="modal-container">
+      <div class="modal-container modal-display-none">
         <div class="modal modal-content-container">
-          <button class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
           <section class="modal-content">
             <h2 class="modal-title title">Поиск гостиницы в Седоне</h2>
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -195,18 +190,18 @@
               <div class="modal-field grid-field-adults">
                 <label class="modal-label grid-label-adults" for="adults">Взрослые:</label>
                 <div class="modal-input-group grid-group-adults">
-                  <button class="button-plus input-inner-button" type="button">
-                    <svg class="modal-button-icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
-                    </svg>
-                    <span class="visually-hidden">Убрать взрослого</span>
-                  </button>
-                  <input class="modal-input modal-input-adults input" type="number" id="adults" name="adults" placeholder="2" required>
                   <button class="button-minus input-inner-button" type="button">
                     <svg class="modal-button-icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3.39282 9V11H17.3928V9H3.39282Z"/>
                     </svg>
                     <span class="visually-hidden">Добавить взрослого</span>
+                  </button>
+                  <input class="modal-input modal-input-adults input" type="number" id="adults" name="adults" placeholder="2" required>
+                  <button class="button-plus input-inner-button" type="button">
+                    <svg class="modal-button-icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                    <span class="visually-hidden">Убрать взрослого</span>
                   </button>
                 </div>
               </div>
@@ -214,33 +209,36 @@
                 <div class="modal-label-group">
                   <label class="modal-label grid-label-children" for="children">Дети:</label>
                   <div class="modal-faq-wrapper">
-                    <button class="button-faq button-blue" type="button">
+                    <button class="button-faq button-blue" type="button" aria-labelledby="faq-children">
                       <svg class="button-icon-info" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.39307 4H11.3931V6H9.39307V4ZM11.3931 16H9.39307V7H11.3931V16Z"/>
                       </svg>
                     </button>
-                    <p class="modal-faq-block">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                    <span class="modal-faq-block" role="modal-faq-wrapper" id="faq-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </div>
                 </div>
                 <div class="modal-input-group grid-group-children">
-                  <button class="button-plus input-inner-button" type="button">
-                    <svg class="modal-button-icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
-                    </svg>
-                    <span class="visually-hidden">Убрать ребёнка</span>
-                  </button>
-                  <input class="modal-input modal-input-children input" type="number" id="children" name="children" placeholder="2" required>
                   <button class="button-minus input-inner-button" type="button">
                     <svg class="modal-button-icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3.39282 9V11H17.3928V9H3.39282Z"/>
                     </svg>
                     <span class="visually-hidden">Добавить ребёнка</span>
                   </button>
+                  <input class="modal-input modal-input-children input" type="number" id="children" name="children" placeholder="2" required>
+                  <button class="button-plus input-inner-button" type="button">
+                    <svg class="modal-button-icon" width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                    <span class="visually-hidden">Убрать ребёнка</span>
+                  </button>
                 </div>
               </div>
               <button class="modal-button button button-blue" type="submit">Найти</button>
             </form>
           </section>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
         </div>
       </div>
     </div>
